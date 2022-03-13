@@ -1,39 +1,34 @@
 ---
 import logo from "../../public/assets/logo.png";
-import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import FaceBookLogo from "../../public/assets/facebook.svg";
+import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import TwitterLogo from "../../public/assets/twitter.svg";
 
-import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
+import MeduimLogo from "../../public/assets/medium.svg";
 ---
 
-<header class="flex items-center justify-between w-full">
+<header class="header">
   <div class="logo">
     <img src={logo} alt="logo" />
   </div>
 
-  <div class="links text-white">
-    <ul class="flex space-x-6">
-      <li>MARKETPLACE</li>
+  <div class="links ">
+    <ul class="link__list ">
+      <li class="item__list">MARKETPLACE</li>
 
-      <li>ABOUT</li>
+      <li class="item__list">ABOUT</li>
 
-      <li>RESOURCES</li>
+      <li class="item__list">RESOURCES</li>
 
-      <li>FAQ</li>
+      <li class="item__list">FAQ</li>
     </ul>
   </div>
 
-  
+  <div class="social__icons">
+    <img src={FaceBookLogo} alt="logo" />
 
-  <div class="social__icons bg-white flex">
-  
-  <BsFacebook class="text-white" />
-
-
-
-  <BsInstagram />
-  <BsTwitter />
-  
+    <img src={TwitterLogo} alt="logo" />
+    <img src={MeduimLogo} alt="logo" />
   </div>
-
-  logo
 </header>

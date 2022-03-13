@@ -1,7 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap");
 
 body {
-	background-color: #000;
+  background: rgb(220, 6, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 6, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 37%,
+    rgba(0, 10, 11, 1) 64%
+  );
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .header {
+    @apply flex  items-center bg-white/30 justify-between  w-full p-5 border-b backdrop-blur-2xl;
+  }
+
+  .links {
+    @apply text-white hidden md:block;
+  }
+
+  .link__list {
+    @apply flex space-x-10 text-base font-normal;
+  }
+
+  .item__list {
+    @apply hover:text-fuchsia-800 hover:cursor-pointer;
+  }
+
+  .social__icons {
+    @apply flex space-x-5;
+  }
+
+  .heading__1 {
+    @apply text-7xl font-normal;
+  }
+
+  .heading__2 {
+    @apply text-6xl font-normal;
+  }
+
+  .hero__text {
+    @apply text-white text-base font-light;
+  }
+
+  .discover__more__button {
+    @apply border-2 border-white text-lg rounded-full px-10 py-2 text-white font-normal;
+  }
 }
