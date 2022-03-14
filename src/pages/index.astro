@@ -1,40 +1,37 @@
 ---
 // Style Imports
-import '../styles/global.css';
-import '../styles/home.css';
+import "../styles/global.css";
+import "../styles/home.css";
 // Component Imports
-import Home from '../components/Home.astro';
-import Header from '../components/Header.astro';
+import Home from "../components/Home.astro";
+import Header from "../components/Header.astro";
 // You can import components from any supported Framework here!
-
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
+let title = "My Astro Site";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
+
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body class="">
+    <Header />
 
+    <main class="max-w-7xl mx-auto h-screen">
+      <Home />
 
-</head>
-<body class="">
-<Header />
-
-	<main class="max-w-7xl mx-auto h-screen">
-	
-		<Home />
-
-		<!--
+      <!--
 
 		You can also use imported framework components directly in your markup!
 		
@@ -44,7 +41,6 @@ let title = 'My Astro Site';
 		See https://docs.astro.build/core-concepts/component-hydration/ 
 
 		-->
-
-	</main>
-</body>
+    </main>
+  </body>
 </html>

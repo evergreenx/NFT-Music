@@ -1,3 +1,8 @@
+---
+import SolanaLogo from "../../public/assets/solanalogo.png";
+import Marquee from "react-fast-marquee";
+---
+
 <div>
   <section class=" p-5  ">
     <div class="content text-white h-screen ">
@@ -14,11 +19,31 @@
       </div>
 
       <div class="discover__more__container">
+        <div class="powered__by">
+          <p class="powered__by__text">Powered by</p>
+          <img src={SolanaLogo} alt="Solana Logo" class="solana-logo" />
+        </div>
 
+        <button class="discover__more__button ">
+          Discover More
 
-      Powered by 
-   
-        <button class="discover__more__button"> Discover More </button>
+          <div class="svg__icon">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18.5L15 12.5L9 6.5"
+                stroke="white"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </button>
       </div>
     </div>
 
@@ -26,6 +51,12 @@
       <img src="../../public/assets/hero1.png" alt="" />
     </div> -->
   </section>
+
+  <Marquee>
+    <p class="text-white">
+      I can be a React component, multiple React components, or just some text.
+    </p>
+  </Marquee>
 </div>
 
 <style>
