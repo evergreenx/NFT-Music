@@ -1,0 +1,50 @@
+---
+// Style Imports
+import "../styles/global.css";
+import "../styles/home.css";
+// Component Imports
+import Home from "../components/Home.jsx";
+import Header from "../components/Header.astro";
+// You can import components from any supported Framework here!
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+AOS.init();
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = "My Astro Site";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body class="">
+    <Header />
+
+    <main class=" mx-auto h-screen">
+      <Home />
+
+      <!--
+
+		You can also use imported framework components directly in your markup!
+		
+		Note: by default, these components are NOT interactive on the client.
+		The `:visible` directive tells Astro to make it interactive.
+		
+		See https://docs.astro.build/core-concepts/component-hydration/ 
+
+		-->
+    </main>
+  </body>
+</html>

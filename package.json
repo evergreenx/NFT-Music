@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@astrojs/renderer-react": "^0.5.0",
+    "aos": "^2.3.4",
     "react-easy-marquee": "^1.2.3"
   }
 }
