@@ -1,18 +1,15 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import SolanaLogo from "../../public/assets/solanalogo.png";
 import Marquee from "react-easy-marquee";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
 const Hero = () => {
-
-
   // useEffect(() => {
-  
+
   // }, [])
-  
 
   return (
     <div>

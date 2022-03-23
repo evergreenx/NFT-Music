@@ -1,4 +1,3 @@
-
 import SolanaLogo from "../../public/assets/solanalogo.png";
 import Marquee from "react-easy-marquee";
 

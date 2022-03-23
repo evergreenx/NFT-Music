@@ -1,0 +1,75 @@
+---
+import logo from "../../public/assets/logo.png";
+import FaceBookLogo from "../../public/assets/facebook.svg";
+import TwitterLogo from "../../public/assets/twitter.svg";
+
+import MeduimLogo from "../../public/assets/medium.svg";
+
+let data =[{
+
+    number: '01/',
+    desc: 'Artists themselves become a platform. NFTs allow artistes, especially upcoming ones, to create an ecosystem that allows genuine fans to buy into their market.'
+},
+
+{
+
+    number: '02/',
+    desc: 'NFT gives all the power to creators. Anyone upcoming artiste can do their stuff on-chain, making them more independent and freeing them from unfavorable deals from record labels.'
+},
+{
+
+    number: '03/',
+    desc:'A positive NFT-fueled change in the music market can upstage crypto adoption at large.'
+
+}
+
+]
+---
+
+
+<div class=" hero2 py-5">
+<section class=" p-5">
+
+
+<div class="engage__text__container">
+</div>
+
+    
+
+<div class="engage__text">
+
+
+<div class="text__card py-10 flex space-x-10"
+
+  
+          data-aos="fade-up"
+          data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+
+>
+
+{
+    data.map((item,index)=>{
+        return(
+            <div class="text__card__item text-white flex-1">
+            <div class="text__card__item__number font-semibold text-6xl py-5 ">
+            <p>{item.number}</p>
+            </div>
+            <div class="text__card__item__desc text-lg font-light">
+            <p>{item.desc}</p>
+            </div>
+            </div>
+        )
+    })
+}
+
+</div>
+
+</div>
+
+</section>
+</div>

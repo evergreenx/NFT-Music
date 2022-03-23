@@ -1,19 +1,13 @@
-import React , {useEffect} from "react";
+import React, { useEffect } from "react";
 import SolanaLogo from "../../public/assets/solanalogo.png";
 import Marquee from "react-easy-marquee";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
-
-
   useEffect(() => {
-  
-AOS.init();
-
-  }, [])
-  
+    AOS.init();
+  }, []);
 
   return (
     <div>
@@ -24,11 +18,10 @@ AOS.init();
 
             <h3 class="heading__2">Digital Music for fans.</h3>
 
-            <h5 class="hero__text py-5"
+            <h5
+              class="hero__text py-5"
               data-aos="fade-up"
               data-aos-offset="200"
-         
-             
             >
               Music NFTs will continue to revolutionize the way that artists and
               fans create community <br />
