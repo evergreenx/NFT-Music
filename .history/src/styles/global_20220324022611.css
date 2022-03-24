@@ -37,11 +37,11 @@ body {
   }
 
   .heading__1 {
-    @apply lg:text-7xl text-5xl font-normal text-white;
+    @apply lg:text-7xl tex font-normal text-white;
   }
 
   .heading__2 {
-    @apply lg:text-6xl text-5xl font-normal;
+    @apply text-6xl font-normal;
   }
 
   .hero__text {

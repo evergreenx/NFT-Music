@@ -41,7 +41,7 @@ body {
   }
 
   .heading__2 {
-    @apply lg:text-6xl text-5xl font-normal;
+    @apply lg:text-6xl font-normal;
   }
 
   .hero__text {
