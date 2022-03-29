@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap");
+
+body {
+  background: rgb(220, 6, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 6, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 37%,
+    rgba(0, 10, 11, 1) 64%
+  );
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .header {
+    @apply flex  items-center bg-white/30 justify-between  w-full p-5 border-b backdrop-blur-2xl;
+  }
+
+  .links {
+    @apply text-white hidden md:block;
+  }
+
+  .link__list {
+    @apply flex space-x-10 text-base font-normal;
+  }
+
+  .item__list {
+    @apply hover:text-fuchsia-800 hover:cursor-pointer;
+  }
+
+  .social__icons {
+    @apply flex space-x-5;
+  }
+
+  .heading__1 {
+    @apply lg:text-7xl text-5xl font-normal text-white;
+  }
+
+  .heading__2 {
+    @apply lg:text-6xl text-5xl font-normal;
+  }
+
+  .hero__text {
+    @apply text-white text-base font-light;
+  }
+
+  .discover__more__button {
+    @apply border-2 border-white text-lg justify-around rounded-full lg:px-8 px-3  py-3 transition-all hover:translate-x-7 text-white font-light flex items-center hover:bg-fuchsia-800 hover:cursor-pointer;
+  }
+
+  .discover
+
+  .discover__more__container {
+    @apply flex  items-center space-x-10;
+  }
+
+  .powered__by__text {
+    @apply text-xs mb-1;
+  }
+
+  .svg__icon {
+    @apply ml-5;
+  }
+}

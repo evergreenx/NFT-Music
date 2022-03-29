@@ -1,0 +1,58 @@
+---
+import imageOne from '../../public/assets/img1.png'
+import imageTwo from '../../public/assets/img2.png'
+import imageThree from '../../public/assets/img3.png'
+
+
+
+
+let cardDetails = [
+
+{
+    name: 'Heart & Sol',
+    tokens: '16',
+    solana: '0.3234',
+    img : imageOne
+},
+
+{
+    name: 'Heart & Sol',
+    tokens: '16',
+    solana: '0.3234',
+    img : imageTwo
+},
+
+{
+    name: 'Heart & Sol',
+    tokens: '16',
+    solana: '0.3234',
+    img : imageThree
+},
+
+]
+---
+<section class="discover__card flex justify-center text-white">
+
+{
+    cardDetails.map(card => (
+        <div class="discover__card-container border">
+            <div class="discover__card-image">
+                <img src={card.img} alt=""/>
+            </div>
+            <div class="discover__card-details">
+                <h3 class="text-xl font-semibold">{card.name}</h3>
+                <div class="flex jus">
+                <p class="font-normal text-base">{card.solana}</p>
+                    <p class="font-normal text-base">{card.tokens} tokens </p>
+
+                </div>
+            
+            </div>
+        </div>
+    ))
+}
+
+</section>
+
+
+

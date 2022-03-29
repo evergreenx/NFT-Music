@@ -1,0 +1,89 @@
+---
+
+
+
+let filterGenre = [
+    {
+        id: 1,
+        name: 'Action'
+    },
+    {
+        id: 2,
+        name: 'Comedy'
+    },
+    {
+        id: 3,
+        name: 'Drama'
+    },
+    {
+        id: 4,
+        name: 'Horror'
+    },
+    {
+        id: 5,
+        name: 'Romance'
+    },
+    {
+        id: 6,
+        name: 'Sci-Fi'
+    },
+    {
+        id: 7,
+        name: 'Thriller'
+    }
+
+]
+---    
+
+
+    <section class="discover">
+    
+    
+
+    <div class="discover__header flex justify-around items-center">
+    
+    
+    <div class="discover__text">
+    
+    <h1 class="heading__1">
+    Discover Music NFT
+    </h1>
+    
+    
+    </div>
+
+
+
+
+    <div class="discover__filter flex text-white items-center space-x-5">
+    
+    
+    <p class="text-xl">
+    Music Genre
+    </p>
+    
+
+    <div class="discover__select flex space-x-5">
+
+{
+    filterGenre.map(genre => {
+        return (
+            <div class="discover__select-item border p-2 rounded-3xl text-base font-normal cursor-pointer">
+            <p  id={genre.id} name={genre.name}>
+
+            {genre.name}
+            </p>
+       
+            </div>
+        )
+    })
+}
+    </div>
+
+
+    </div>
+    
+    </div>
+    
+    
+    </section>
