@@ -50,7 +50,7 @@ const Discover = () => {
         <div class="discover__filter flex text-white items-center space-x-5">
           <p class="text-xl">Music Genre</p>
 
-          <div class="discover__select lg:flex space-x-5 hidden">
+          <div class="discover__select lg:flex space-x-5 lg:hidden">
             {filterGenre.map((genre) => {
               return (
                 <div

@@ -4,10 +4,10 @@ import imageTwo from '../../public/assets/img2.png'
 import imageThree from '../../public/assets/img3.png'
 import imageFour from '../../public/assets/img4.png'
 import imageFive from '../../public/assets/img5.png'
-import imageSix from '../../public/assets/img6.png'
-import imageSeven from '../../public/assets/img7.png'
-import imageEight from '../../public/assets/img8.png'
-import imageNine from '../../public/assets/img9.png'
+import imageFour from '../../public/assets/img4.png'
+import imageFour from '../../public/assets/img4.png'
+import imageFour from '../../public/assets/img4.png'
+import imageFour from '../../public/assets/img4.png'
 
 
 
@@ -37,57 +37,13 @@ let cardDetails = [
     img : imageThree
 },
 
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageFour
-},
-
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageFive
-},
-
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageSix
-},
-
-
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageSeven
-},
-
-
-
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageEight
-},
-
-{
-    name: 'Heart & Sol',
-    tokens: '16',
-    solana: '0.3234',
-    img : imageNine
-},
 ]
 ---
-<section class="discover__card grid sm:grid-col-4 lg:grid-cols-3 p-10 gap-10 bg-black  text-white  py-12  ">
+<section class="discover__card grid lg:grid-cols-3 p-5  justify-center lg:space-y-0 space-y-10 lg:space-x-10 text-white bg-black py-12  ">
 
 {
     cardDetails.map(card => (
-        <div class="discover__card-container  border  px-5  py-14 flex mb-10  flex-col ">
+        <div class="discover__card-container  border  px-5 w-[402px] py-14 flex   flex-col ">
             <div class="discover__card__image  ">
                 <img src={card.img} class="-mt-20 ml-12" alt="card-img"/>
             </div>

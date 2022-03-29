@@ -83,13 +83,13 @@ let cardDetails = [
 },
 ]
 ---
-<section class="discover__card grid sm:grid-col-4 lg:grid-cols-3 p-10 gap-10 bg-black  text-white  py-12  ">
+<section class="discover__card grid lg:grid-cols-3 p-10 gap-10 bg-black   text-white  py-12  ">
 
 {
     cardDetails.map(card => (
         <div class="discover__card-container  border  px-5  py-14 flex mb-10  flex-col ">
-            <div class="discover__card__image  ">
-                <img src={card.img} class="-mt-20 ml-12" alt="card-img"/>
+            <div class="discover__card__image bg-black p-3 -mt-20 ml-12  ">
+                <img src={card.img}  alt="card-img"/>
             </div>
             <div class="discover__card__details py-7 flex-end">
                 <h3 class="text-xl font-semibold mb-5">{card.name}</h3>

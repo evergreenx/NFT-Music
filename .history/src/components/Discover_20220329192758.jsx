@@ -37,7 +37,7 @@ const Discover = () => {
   ];
 
   return (
-    <section class="discover py-10 p-5">
+    <section class="discover py-10">
       <div class="discover__header flex justify-between ">
         <div class="discover__text">
           <h1 class="heading__1">
@@ -50,7 +50,7 @@ const Discover = () => {
         <div class="discover__filter flex text-white items-center space-x-5">
           <p class="text-xl">Music Genre</p>
 
-          <div class="discover__select lg:flex space-x-5 hidden">
+          <div class="discover__select flex space-x-5 lg:hidden">
             {filterGenre.map((genre) => {
               return (
                 <div
