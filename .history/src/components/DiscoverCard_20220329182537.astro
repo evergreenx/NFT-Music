@@ -2,8 +2,6 @@
 import imageOne from '../../public/assets/img1.png'
 import imageTwo from '../../public/assets/img2.png'
 import imageThree from '../../public/assets/img3.png'
-import imageFour from '../../public/assets/img4.png'
-
 
 
 
@@ -37,9 +35,9 @@ let cardDetails = [
 
 {
     cardDetails.map(card => (
-        <div class="discover__card-container  border  px-5 w-[402px] py-14 flex   flex-col ">
-            <div class="discover__card__image  ">
-                <img src={card.img} class="-mt-20 ml-12" alt="card-img"/>
+        <div class="discover__card-container bg-slate-500 border  px-0 w-[402px] py-10 flex justify-center ite flex-col ">
+            <div class="discover__card__image  relative ">
+                <img src={card.img} class="-mt-9 " alt="card-img"/>
             </div>
             <div class="discover__card__details py-7 flex-end">
                 <h3 class="text-xl font-semibold mb-5">{card.name}</h3>

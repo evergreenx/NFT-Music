@@ -2,8 +2,6 @@
 import imageOne from '../../public/assets/img1.png'
 import imageTwo from '../../public/assets/img2.png'
 import imageThree from '../../public/assets/img3.png'
-import imageFour from '../../public/assets/img4.png'
-
 
 
 
@@ -33,15 +31,15 @@ let cardDetails = [
 
 ]
 ---
-<section class="discover__card grid lg:grid-cols-3 p-5  justify-center lg:space-y-0 space-y-10 lg:space-x-10 text-white bg-black py-12  ">
+<section class="discover__card flex justify-center text-white bg-black py-12  ">
 
 {
     cardDetails.map(card => (
-        <div class="discover__card-container  border  px-5 w-[402px] py-14 flex   flex-col ">
-            <div class="discover__card__image  ">
-                <img src={card.img} class="-mt-20 ml-12" alt="card-img"/>
+        <div class="discover__card-container border p-6 py flex justify-around flex-col h-[400px] ">
+            <div class="discover__card__image   ">
+                <img src={card.img} class=" " alt="card-img"/>
             </div>
-            <div class="discover__card__details py-7 flex-end">
+            <div class="discover__card__details py-7">
                 <h3 class="text-xl font-semibold mb-5">{card.name}</h3>
                 <div class="flex justify-between ">
                 <div class="solana flex items-center space-x-3 ">
