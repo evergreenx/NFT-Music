@@ -119,7 +119,7 @@ import Hero1 from '../../public/assets/hero1.png'
           </div>
           </div>
 
-    <div class="content__image relative -m-10 mx-auto    ">
+    <div class="content__image relative -m-10    ">
   
 <img src={Hero1} class="lg:w-[33rem]  w-[20rem]"  />
 
@@ -133,7 +133,7 @@ import Hero1 from '../../public/assets/hero1.png'
 
       <div class="border-2 border-x-0 bg-transparent">
         <!-- <Marquee duration={10000} client:only> -->
-          <div class="text-white uppercase font-light text-sm text-center items-center justify-center lg:text-2xl flex space-x-4">
+          <div class="text-white uppercase font-light text-2xl flex space-x-4">
             <p> new way to reach the new fan </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -174,10 +174,69 @@ import Hero1 from '../../public/assets/hero1.png'
  <style>
 
  
-  
+  .content {
+    /* background-image: url("../../public/assets/hero1.png"); */
+    /* background-size: contain;
+    background-position: 752px -6px;
+    background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+  /* background-position: center; */
+  }
 
 
-
+ .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+           
+            
+            /* border: none; */
+        }
         
+        .marquee  {
+            /* position: absolute; */
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
         
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
  </style> 
